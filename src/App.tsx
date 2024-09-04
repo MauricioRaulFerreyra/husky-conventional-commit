@@ -1,6 +1,6 @@
 function App() {
   const A = 0;
-  if (A == count) {
+  if (A === count) {
     console.log("Hola");
   }
 
