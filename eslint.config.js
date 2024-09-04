@@ -33,11 +33,12 @@ export default tseslint.config(
         "warn",
         { allowConstantExport: true },
       ],
-      "@typescript-eslint/no-explicit-any": "warn",
-      "@typescript-eslint/no-duplicate-enum-values": "warn",
-      "no-empty-function": "error",
-      "no-implicit-coercion": "warn",
-      eqeqeq: ["error", "always"],
+      "@typescript-eslint/no-explicit-any": "warn", // verifica que no se declaren variables de tipo any
+      "@typescript-eslint/no-duplicate-enum-values": "warn", // verifica que no se declaren valores duplicados en enums
+      "no-empty-function": "error", // verifica que no se declaren funciones vacías
+      "no-implicit-coercion": "warn", // verifica que no se usen variables de tipo string
+      eqeqeq: ["error", "always"], // verifica que no sea '==', sino '==='
+      "no-undef": "error", // variables no definidas
     },
   },
 );
