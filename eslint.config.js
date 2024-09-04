@@ -37,6 +37,7 @@ export default tseslint.config(
       "@typescript-eslint/no-duplicate-enum-values": "warn",
       "no-empty-function": "error",
       "no-implicit-coercion": "warn",
+      eqeqeq: ["error", "always"],
     },
   },
 );
